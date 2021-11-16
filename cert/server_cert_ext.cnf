@@ -1,0 +1,14 @@
+basicConstraints = CA:FALSE
+nsCertType = server
+nsComment = "OpenSSL Generated Server Certificate"
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid,issuer:always
+keyUsage = critical, digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+[alt_names]
+IP.1 = 10.10.10.13
+IP.2 = 10.10.10.14
+IP.3 = 10.10.10.17
+DNS.1 = server01.example.io
+DNS.2 = server02.example.io

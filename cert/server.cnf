@@ -1,0 +1,22 @@
+# cat server.cnf
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = req_ext
+prompt = no
+
+[req_distinguished_name]
+C   = US
+ST  = California
+L   = San Jose
+O   = test lab
+OU  = lab
+
+[req_ext]
+subjectAltName = @alt_names
+
+[alt_names]
+IP.1 = 10.10.10.13
+IP.2 = 10.10.10.14
+IP.3 = 10.10.10.17
+DNS.1 = server01.example.io
+DNS.2 = server02.example.io
