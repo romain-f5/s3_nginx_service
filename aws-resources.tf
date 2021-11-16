@@ -69,10 +69,6 @@ resource "aws_instance" "myec2" {
     name        = "romain-nginx"
   }
 }
-##Outputs - optional
-output "s3_bucket_dns" {
-  value = aws_s3_bucket.romain-customer-test-bucket.bucket_domain_name
-}
 
 output "ec2_public_ip" {
   value = aws_instance.myec2.public_ip
